@@ -11,6 +11,7 @@ authors="CerealCamera"
 description='''Fixes compatibility between Sable and ScalableLux!'''
 displayURL = "${display_url}"
 updateJSONURL = "${update_url}"
+logoFile = "icon.png"
 displayTest = "IGNORE_SERVER_VERSION"
 
 [[mixins]]
