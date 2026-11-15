@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.cerealcamera.sable_scalablelux_compat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ServerLevelPlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
