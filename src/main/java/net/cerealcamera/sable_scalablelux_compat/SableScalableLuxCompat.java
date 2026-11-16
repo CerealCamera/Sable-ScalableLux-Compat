@@ -1,6 +1,6 @@
 package net.cerealcamera.sable_scalablelux_compat;
 
-import com.mojang.logging.LogUtils;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
@@ -18,6 +18,10 @@ public class SableScalableLuxCompat {
     public static final String MOD_ID = "sable_scalablelux_compat";
     public static final String MOD_NAME = "Sable ScalableLux Compat";
     public static Logger LOGGER = LogManager.getLogger(MOD_NAME);
+    public static final String scalableLuxVersion = ModList.get()
+            .getModContainerById("scalablelux")
+            .map(container -> container.getModInfo().getVersion().toString())
+            .orElse(null);
 
     public SableScalableLuxCompat() {
         try {
